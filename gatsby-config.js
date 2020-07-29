@@ -6,7 +6,6 @@ module.exports = {
     title: config.siteTitle,
   },
   plugins: [
-    'gatsby-plugin-fontawesome-css',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
