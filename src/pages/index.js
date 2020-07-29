@@ -8,23 +8,28 @@ import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
 import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
+import Whats from '../components/Whats';
 
-import ipad from '../assets/images/ipad.png';
+import ipad from '../assets/images/planta.png';
+import logo from '../assets/images/logo.png';
 import demoImage1 from '../assets/images/demo-image-01.jpg';
 import demoImage2 from '../assets/images/demo-image-02.jpg';
 import bgMaster from '../assets/images/bg-masthead.jpg';
+
 
 const IndexPage = () => (
   <Layout>
     <Header />
 
     <header className="masthead">
-      <div className="container d-flex h-100 align-items-center">
+      <div id="page-top" className="container d-flex h-100 align-items-center" >
         <div className="mx-auto text-center">
-          <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
-          <h2 className="text-white-50 mx-auto mt-2 mb-5">
-            {config.subHeading}
-          </h2>
+          {/* <h1 className="text-white-50 mx-auto mt-2 mb-5">
+            {config.heading}
+          </h1> */}
+        <img src={logo} className="img-fluid" alt="" width="600px" />
+          <h2 className="mx-auto my-0 text-white">Los huertitos mas bonitas</h2>
+     
           <Scroll type="id" element="about">
             <a href="#about" className="btn btn-primary">
               About
@@ -113,11 +118,12 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-
+    <Whats />
     <Subscribe />
 
     <SocialLinks />
     <Footer />
+    
   </Layout>
 );
 
